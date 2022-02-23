@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+.cartao {
+    background-color: white;
+    width: 88%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.cartao .ilustracao img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.cartao .conteudo {
+    padding-top: 10%;
+}
+
+.cartao .titulo {
+    color: var(--titulo);
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.3em;
+    margin-bottom: 7%;
+}
+
+.cartao .descricao {
+    color: var(--descricao);
+    font-size: 1.02em;
+    line-height: 1.4em;
+    margin-bottom: 10%;
+}
+
+.cartao .perfil {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.cartao .perfil .avatar {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 6%;
+}
+
+.cartao .perfil p {
+    line-height: 1.5em;
+}
+
+.cartao .perfil .perfil-nome {
+    color: var(--titulo);
+    font-weight: 700;
+}
+
+.cartao .perfil .data {
+    color: var(--data);
+}
+
+.cartao .perfil .compartilhar {
+    background-color: var(--body-back);
+    margin-left: auto;
+    border-radius: 50%;
+    padding: 3%;
+    z-index: 2;
+}
+
+.cartao .perfil .compartilhar-active {
+    background-color: var(--descricao);
+    color: white;
+}
+
+.cartao .perfil .redes-sociais {
+    background-color: var(--titulo);
+    height: 100%;
+    width: 100%;
+    top: 85%;
+    left: 0;
+    display: none;
+    align-items: center;
+    padding-left: 10%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.cartao .perfil .redes-sociais-active {
+    display: flex;
+}
+
+.cartao .perfil .redes-sociais .aba-nome {
+    color: var(--data);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 6%;
+}
+
+.cartao .perfil .rede-social {
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    /* .cartao * {
+        border: 1px solid black;
+    } */
+
+    .cartao .ilustracao {
+        width: 40%;
+    }
+
+    .cartao .ilustracao {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .cartao .conteudo {
+        width: 60%;
+        padding: 0 0 2%;
+    }
+
+    .cartao .titulo {
+        font-size: 1.6em;
+        margin-bottom: 2%;
+    }
+
+    .cartao .descricao {
+        margin-bottom: 0;
+    }
+
+    .cartao .perfil {
+        width: 85%;
+    }
+
+    .cartao .perfil .redes-sociais {
+        border-radius: 10px;
+        height: 70%;
+        width: 50%;
+        justify-content: center;
+        top: -80%;
+        left: 63%;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .cartao .perfil .redes-sociais:after {
+        content: "";
+        background-color: var(--titulo);
+        height: 30px;
+        width: 30px;
+        top: 60%;
+        position: absolute;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    .cartao .perfil .rede-social {
+        
+    }
+}

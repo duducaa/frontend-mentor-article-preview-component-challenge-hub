@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --titulo: hsl(217, 19%, 35%);
+    --descricao: hsl(214, 17%, 51%);
+    --data: hsl(212, 23%, 69%);
+    --body-back: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--body-back);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+    font-size: 13px;
+    z-index: 0;
+}
+
+.container {
+    padding: 0% 10%;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 8% 8% 0 8%;
+    }
+}
